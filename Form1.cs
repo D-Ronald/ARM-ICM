@@ -82,13 +82,25 @@ namespace Braço
                     case Keys.A:
                         serialPort1.Write("A");
                         break;
+                    case Keys.NumPad4:
+                        serialPort1.Write("A");
+                        break;
                     case Keys.W:
+                        serialPort1.Write("W");
+                        break;
+                    case Keys.NumPad8:
                         serialPort1.Write("W");
                         break;
                     case Keys.S:
                         serialPort1.Write("S");
                         break;
+                    case Keys.NumPad2:
+                        serialPort1.Write("S");
+                        break;
                     case Keys.D:
+                        serialPort1.Write("D");
+                        break;
+                    case Keys.NumPad6:
                         serialPort1.Write("D");
                         break;
                     case Keys.Q:
@@ -97,21 +109,24 @@ namespace Braço
                     case Keys.E:
                         serialPort1.Write("E");
                         break;
-                    case Keys.Right:
-                        this.Focus();
-                        serialPort1.Write("E");
+                    case Keys.NumPad1:
+                        serialPort1.Write("AS");
                         break;
-                    case Keys.Left:
-                        this.Focus();
-                        serialPort1.Write("Q");
+                    case Keys.NumPad3:
+                        serialPort1.Write("DS");
                         break;
-                    case Keys.Escape:
-                        ActiveControl = null;
+                    case Keys.NumPad7:
+                        serialPort1.Write("AW");
                         break;
+                    case Keys.NumPad9:
+                        serialPort1.Write("DW");
+                        break;
+                    
                 }
 
             }
         }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {
